@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - TAUFIQ ENGLISH</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/Favicon1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Video Background -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="videos/Grammar.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <div class="container">
+      <!-- Navigation (same as index.html) -->
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="index.html"
+            ><img src="images/Logo1.png" alt="Taufiq English Logo" class="logo"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">Grammar ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Article</a></li>
+              <li><a href="#">Parts of Speech</a></li>
+              <li><a href="#">Voice</a></li>
+              <li><a href="#">Narration</a></li>
+              <li><a href="#">Transformation</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Online Exam</a></li>
+          <li><a href="#">Writing</a></li>
+          <li><a href="#">Question Banks</a></li>
+          <li><a href="#">Model Test</a></li>
+          <li><a href="#">About Me</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Blog Header -->
+      <section class="blog-header">
+        <h1>Latest Lessons & Articles</h1>
+        <p>Explore our comprehensive English learning resources</p>
+      </section>
+
+      <!-- Blog Grid -->
+      <section class="blog-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-card">
+          <div class="blog-thumbnail">
+            <img src="images/Articles.png" alt="Article Thumbnail" />
+          </div>
+          <div class="blog-content">
+            <h2><a href="#">Understanding English Articles: A, An, The</a></h2>
+            <div class="blog-meta">
+              <span class="date">Posted: December 15, 2024</span>
+              <span class="author">By: Taufiq</span>
+            </div>
+            <p>
+              Learn the proper usage of articles in English grammar with
+              comprehensive examples and exercises.
+            </p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card">
+          <div class="blog-thumbnail">
+            <img src="images/Parts of Speech.png" alt="Parts of Speech" />
+          </div>
+          <div class="blog-content">
+            <h2><a href="#">The 8 Parts of Speech Explained</a></h2>
+            <div class="blog-meta">
+              <span class="date">Posted: December 10, 2024</span>
+              <span class="author">By: Taufiq</span>
+            </div>
+            <p>
+              Master the fundamental building blocks of English language with
+              detailed explanations and examples.
+            </p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Add more blog posts as needed -->
+        <!-- Duplicate the article blocks for more posts -->
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Site Map</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Grammar</a></li>
+              <li><a href="#">Online Exam</a></li>
+              <li><a href="#">Writing</a></li>
+              <li><a href="#">Question Banks</a></li>
+              <li><a href="#">Model Test</a></li>
+              <li><a href="#">About Me</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p>Call: <a href="tel:01701041385">01701041385</a></p>
+            <p>
+              Office: Greater Road Masjid Goli,<br />Beside Transcom
+              Building,<br />Kadirganj, Rajshahi
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>TAUFIQ ENGLISH</h3>
+            <p>Master English; Master Opportunities.</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 TAUFIQ ENGLISH. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+      // Load actual posts from localStorage
+      document.addEventListener("DOMContentLoaded", function () {
+        const loadBlogPosts = () => {
+          const posts = JSON.parse(localStorage.getItem("blogPosts") || "[]");
+          const blogGrid = document.querySelector(".blog-grid");
+
+          if (posts.length === 0) {
+            blogGrid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--tea-green);">
+                    <i class="fas fa-inbox" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h3>No posts yet</h3>
+                    <p>Check back later for new English lessons and articles!</p>
+                </div>
+            `;
+            return;
+          }
+
+          blogGrid.innerHTML = posts
+            .map(
+              (post) => `
+            <article class="blog-card">
+                <div class="blog-thumbnail">
+                    <img src="${
+                      post.thumbnail ||
+                      "https://via.placeholder.com/400x250/08cf37/ffffff?text=No+Image"
+                    }" alt="${post.title}">
+                </div>
+                <div class="blog-content">
+                    <h2><a href="single-post.html?id=${post.id}">${
+                post.title
+              }</a></h2>
+                    <div class="blog-meta">
+                        <span class="date">Posted: ${new Date(
+                          post.date
+                        ).toLocaleDateString()}</span>
+                        <span class="author">By: ${post.author}</span>
+                    </div>
+                    <p>${post.content.substring(0, 100)}${
+                post.content.length > 100 ? "..." : ""
+              }</p>
+                    <a href="single-post.html?id=${
+                      post.id
+                    }" class="read-more">Read More →</a>
+                </div>
+            </article>
+        `
+            )
+            .join("");
+        };
+
+        loadBlogPosts();
+      });
+    </script>
+  </body>
+</html>

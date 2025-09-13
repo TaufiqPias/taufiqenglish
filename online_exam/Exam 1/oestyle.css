@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary: #2e8613d0;
+  --secondary: #272727dc;
+  --accent: #f72585;
+  --light: #b4ffb8;
+  --dark: #212529;
+  --success: #60dd75;
+  --danger: #e63946;
+  --warning: #ffb703;
+  --gray: #040505cb;
+  --correct: #d4edda;
+  --incorrect: #f8d7da;
+}
+
+body {
+  background: linear-gradient(180deg, #000000 0%, #418f5f 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timer {
+  background: var(--secondary);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.exam-info {
+  padding: 20px;
+  background: var(--light);
+  border-bottom: 1px solid var(--gray);
+}
+
+.question-container {
+  padding: 25px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  padding: 15px;
+  border: 2px solid var(--gray);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.option:hover {
+  border-color: var(--primary);
+  background: rgba(67, 97, 238, 0.05);
+}
+
+.option.selected {
+  border-color: var(--primary);
+  background: rgba(14, 150, 48, 0.438);
+}
+
+.option.correct {
+  background-color: var(--correct);
+  border-color: #28a745;
+}
+
+.option.incorrect {
+  background-color: var(--incorrect);
+  border-color: #dc3545;
+}
+
+.option input {
+  display: none;
+}
+
+.option-label {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--light);
+  border: 2px solid var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-weight: bold;
+  color: var(--dark);
+  transition: all 0.3s ease;
+}
+
+.option.selected .option-label {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.option.correct .option-label {
+  background: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.option.incorrect .option-label {
+  background: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: white;
+}
+
+.answer-feedback {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.option.correct .answer-feedback {
+  color: #28a745 !important;
+}
+
+.option.incorrect .answer-feedback {
+  color: #dc3545 !important;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid var(--gray);
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-prev {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.btn-prev:hover {
+  background: var(--gray);
+  color: whitesmoke;
+}
+
+.btn-next {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-next:hover {
+  background: var(--secondary);
+}
+
+.btn-skip {
+  background: var(--warning);
+  color: var(--dark);
+}
+
+.btn-skip:hover {
+  background: #e5a502;
+}
+
+.btn-submit {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-submit:hover {
+  background: #c1121f;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--light);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress {
+  height: 100%;
+  background: var(--success);
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.result-container {
+  padding: 30px;
+  text-align: center;
+  display: none;
+}
+
+.score {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 20px 0;
+}
+
+.score-text {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.summary {
+  background: var(--light);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+.btn-review,
+.btn-home {
+  margin-top: 20px;
+  padding: 12px 30px;
+}
+
+.btn-home {
+  background: var(--secondary);
+  color: white;
+}
+
+.student-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.input-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input-group input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.leaderboard {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.leaderboard h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray);
+}
+
+.leaderboard-table th {
+  background: var(--primary);
+  color: white;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background: var(--light);
+}
+
+.leaderboard-table tr:hover {
+  background: rgba(67, 97, 238, 0.05);
+}
+
+.rank {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.save-btn {
+  background: var(--success);
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.save-btn:hover {
+  background: #3a9cc2;
+}
+
+@media (max-width: 600px) {
+  .container {
+    border-radius: 12px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .option {
+    padding: 12px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  .student-info {
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navigation button {
+    flex: 1;
+    min-width: 100px;
+  }
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  background: var(--danger);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateX(150%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.notification.show {
+  transform: translateX(0);
+}
+
+.notification.success {
+  background: var(--success);
+}

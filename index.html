@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAUFIQ ENGLISH - Master English; Master Opportunities.</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Add Favicon -->
+    <link rel="icon" type="image/png" href="images/Favicon1.png" />
+    <!-- Link to Google Fonts for modern fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Video Background Container -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <!-- Remember to add your own video file to the /videos folder -->
+        <source src="videos/Title_Video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
+      <!-- A dim overlay for better text readability -->
+    </div>
+
+    <!-- Website Wrapper -->
+    <div class="container">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="nav-brand">
+          <!-- Replace text with logo image -->
+          <a href="index.html">
+            <img
+              src="images/Logo1.png"
+              alt="Taufiq English Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0)">Grammar ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Article</a></li>
+              <li><a href="#">Parts of Speech</a></li>
+              <li><a href="#">Voice</a></li>
+              <li><a href="#">Narration</a></li>
+              <li><a href="#">Transformation</a></li>
+            </ul>
+          </li>
+
+          <!-- Other menu items -->
+          <li><a href="../online_exam\onlinehome.html">Online Exam</a></li>
+          <li><a href="#">Writing</a></li>
+          <li><a href="#">Question Banks</a></li>
+          <li><a href="#">Model Test</a></li>
+          <li><a href="#">About Me</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Hero Section with Motto -->
+      <section class="hero">
+        <h1>Master English; Master Opportunities.</h1>
+        <p>
+          Your comprehensive resource for mastering the English language and
+          unlocking your potential.
+        </p>
+        <a href="blog.html" class="cta-button">Explore Lessons</a>
+      </section>
+      <div style="align-items: center; text-align: center; margin: 40px 0">
+        <h1>Word of the Day</h1>
+        <h3 id="word" style="color: limegreen; font-size: 64px"></h3>
+        <h4 id="pos"></h4>
+        <p id="description"></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Site Map</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Grammar</a></li>
+              <li><a href="#">Online Exam</a></li>
+              <li><a href="#">Writing</a></li>
+              <li><a href="#">Question Banks</a></li>
+              <li><a href="#">Model Test</a></li>
+              <li><a href="#">About Me</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p>Call: <a href="tel:01701041385">01701041385</a></p>
+            <p>
+              Office: Greater Road Masjid Goli,<br />Beside Transcom
+              Building,<br />Kadirganj, Rajshahi
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>TAUFIQ ENGLISH</h3>
+            <p>Master English; Master Opportunities.</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025-26 TAUFIQ ENGLISH. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link to our JavaScript file -->
+    <script src="js/script.js"></script>
+    <script src="js/words.js"></script>
+
+    <!-- Main script with your getWordOfTheDay function -->
+    <script>
+      // Your provided word selection function
+      function getWordOfTheDay() {
+        const now = new Date();
+        const start = new Date(now.getFullYear(), 0, 0);
+        const diff = now - start;
+        const oneDay = 1000 * 60 * 60 * 24;
+        const dayOfYear = Math.floor(diff / oneDay);
+        const index = dayOfYear % words.length; // ensures 0-365
+        return words[index];
+      }
+
+      // Get today's word and populate the HTML
+      const selected = getWordOfTheDay();
+      document.getElementById("word").innerHTML = '"' + selected.word + '"';
+      document.getElementById("pos").innerHTML = "(" + selected.pos + ")";
+      document.getElementById("description").innerHTML = `
+      <b>What It Means</b> <br />${selected.meaning} <br />
+      ${selected.bangla}
+      <br /><br />
+      <b>Example Sentence</b> <br />${selected.example}
+    `;
+    </script>
+  </body>
+</html>
