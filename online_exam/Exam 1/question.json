@@ -2,28 +2,673 @@
   "testTitle": "Exam 1: Grammar",
   "questions": [
     {
-      "question": "What is the value of π (pi) approximately equal to?",
-      "options": ["3.14", "2.71", "1.62", "3.24"],
-      "correct": 0
-    },
-    {
-      "question": "What is the result of 7 × 8?",
-      "options": ["54", "56", "64", "72"],
+      "question": "Identify the correct tense in the sentence: 'By next year, she _____ her degree.'",
+      "options": [
+        "will complete",
+        "will have completed",
+        "completes",
+        "completed"
+      ],
       "correct": 1
     },
     {
-      "question": "Which of the following is a prime number?",
-      "options": ["15", "21", "29", "33"],
+      "question": "Choose the correct article: '_____ Mount Everest is the highest mountain in the world.'",
+      "options": ["A", "An", "The", "No article"],
       "correct": 2
     },
     {
-      "question": "What is the square root of 144?",
-      "options": ["12", "14", "16", "18"],
+      "question": "What is the subject-verb agreement error in: 'The group of students are going to the museum.'",
+      "options": ["group are", "students are", "going to", "No error"],
       "correct": 0
     },
     {
-      "question": "Solve for x: 2x + 5 = 15",
-      "options": ["5", "10", "7.5", "5.5"],
+      "question": "Select the correct preposition: 'She is afraid _____ spiders.'",
+      "options": ["of", "from", "at", "with"],
+      "correct": 0
+    },
+    {
+      "question": "Identify the part of speech of 'quickly' in: 'He runs quickly.'",
+      "options": ["Adjective", "Adverb", "Noun", "Verb"],
+      "correct": 1
+    },
+    {
+      "question": "Change to passive voice: 'The chef cooked the meal.'",
+      "options": [
+        "The meal was cooked by the chef.",
+        "The meal is cooked by the chef.",
+        "The chef was cooking the meal.",
+        "The meal cooked the chef."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose the correct conjunction: 'He is poor _______ honest.'",
+      "options": ["and", "but", "or", "so"],
+      "correct": 1
+    },
+    {
+      "question": "Convert to indirect speech: 'She said, \"I am tired.\"'",
+      "options": [
+        "She said she is tired.",
+        "She says she is tired.",
+        "She said that she was tired.",
+        "She said that I am tired."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Find the error in: 'Neither the teacher nor the students was present.'",
+      "options": ["Neither", "nor", "was", "No error"],
+      "correct": 3
+    },
+    {
+      "question": "Select the correct modal verb: 'You _____ respect your elders.'",
+      "options": ["can", "may", "should", "will"],
+      "correct": 2
+    },
+    {
+      "question": "Identify the correct form: 'If it rains, we _____ the picnic.'",
+      "options": ["cancel", "will cancel", "cancelled", "have cancelled"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the right pronoun: 'This book is _____.",
+      "options": ["mine", "my", "me", "I"],
+      "correct": 0
+    },
+    {
+      "question": "What is the gerund in: 'Swimming is good exercise.'",
+      "options": ["exercise", "is", "good", "Swimming"],
+      "correct": 3
+    },
+    {
+      "question": "Correct the sentence: 'He don't like coffee.'",
+      "options": [
+        "He likes not coffee.",
+        "He do not like coffee.",
+        "He doesn't like coffee.",
+        "No change needed."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Select the adverb clause: 'She left before it started raining.'",
+      "options": [
+        "She left",
+        "before it started raining",
+        "started raining",
+        "it"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Change to active voice: 'The letter was written by him.'",
+      "options": [
+        "He wrote the letter.",
+        "He writes the letter.",
+        "He was writing the letter.",
+        "The letter wrote him."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Identify the correct option: 'The news _____ shocking.'",
+      "options": ["is", "are", "were", "have been"],
+      "correct": 0
+    },
+    {
+      "question": "Choose the correct preposition: 'We arrived _____ the airport on time.'",
+      "options": ["at", "in", "on", "to"],
+      "correct": 0
+    },
+    {
+      "question": "What is the infinitive form in: 'To err is human.'",
+      "options": ["is", "To err", "human", "err"],
+      "correct": 1
+    },
+    {
+      "question": "Convert to direct speech: 'He asked if I was coming.'",
+      "options": [
+        "He asked, 'You are coming?'",
+        "He said, 'Was you coming?'",
+        "He asked, 'Is you coming?'",
+        "He said, 'Are you coming?'"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Find the adjective: 'The red ball bounced high.'",
+      "options": ["high", "ball", "bounced", "red"],
+      "correct": 3
+    },
+    {
+      "question": "Correct subject-verb agreement: 'Each of the boys _____ a gift.'",
+      "options": ["have", "has", "having", "had"],
+      "correct": 1
+    },
+    {
+      "question": "Select the correct conjunction: '_____ it was late, we went out.'",
+      "options": ["Although", "Because", "So", "And"],
+      "correct": 0
+    },
+    {
+      "question": "Identify the tense: 'They have been living here for years.'",
+      "options": [
+        "Present Perfect",
+        "Present Continuous",
+        "Present Perfect Continuous",
+        "Past Perfect"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Choose the right article: 'He plays _____ guitar.'",
+      "options": ["a", "an", "the", "no article"],
+      "correct": 2
+    },
+    {
+      "question": "Change to passive: 'Someone stole my bike.'",
+      "options": [
+        "My bike was stolen.",
+        "My bike is stolen.",
+        "My bike has stolen.",
+        "I stole my bike."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select the pronoun error in: 'Me and him went to the store.'",
+      "options": ["to the store", "went", "Me and him", "No error"],
+      "correct": 2
+    },
+    {
+      "question": "What is the participle in: 'The broken vase lay on the floor.'",
+      "options": ["lay", "vase", "broken", "floor"],
+      "correct": 2
+    },
+    {
+      "question": "Correct the sentence: 'She sings beautiful.'",
+      "options": [
+        "She sings beautifully.",
+        "She sing beautiful.",
+        "She sings beauty.",
+        "No change."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Identify the complex sentence: 'When the bell rings, the class ends.'",
+      "options": ["Simple", "Compound", "Complex", "Compound-Complex"],
+      "correct": 2
+    },
+    {
+      "question": "Choose the modal for permission: '_____ I borrow your pen?'",
+      "options": ["Will", "Must", "Should", "Can"],
+      "correct": 3
+    },
+    {
+      "question": "Convert to indirect: 'He said, \"I will go tomorrow.\"'",
+      "options": [
+        "He said that he would go the next day.",
+        "He said he will go tomorrow.",
+        "He says he would go tomorrow.",
+        "He said that I will go tomorrow."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select the correct preposition: 'The book is _____ the table.'",
+      "options": ["in", "on", "at", "from"],
+      "correct": 1
+    },
+    {
+      "question": "Identify the noun clause: 'I know that he is honest.'",
+      "options": ["I know", "that he is honest", "he is", "honest"],
+      "correct": 1
+    },
+    {
+      "question": "Correct agreement: 'The police _____ arrived.'",
+      "options": ["has", "have", "is", "was"],
+      "correct": 1
+    },
+    {
+      "question": "Change to active: 'The song was sung by her.'",
+      "options": [
+        "She sang the song.",
+        "She sings the song.",
+        "She was singing the song.",
+        "The song sang her."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose the conjunction: 'Not only is he smart, _____ kind.'",
+      "options": ["but also", "and", "or", "so"],
+      "correct": 0
+    },
+    {
+      "question": "What is the adverb in: 'She dances gracefully.'",
+      "options": ["dances", "She", "gracefully", "None"],
+      "correct": 2
+    },
+    {
+      "question": "Select the correct tense: 'I _____ to the market yesterday.'",
+      "options": ["go", "went", "have gone", "will go"],
+      "correct": 1
+    },
+    {
+      "question": "Identify the error: 'This is the most unique gift.'",
+      "options": ["most unique", "This is", "the gift", "No error"],
+      "correct": 0
+    },
+    {
+      "question": "Choose the article: '_____ honest man is respected.'",
+      "options": ["A", "An", "The", "No article"],
+      "correct": 1
+    },
+    {
+      "question": "Convert to passive: 'They are building a house.'",
+      "options": [
+        "A house is being built by them.",
+        "A house was built by them.",
+        "They build a house.",
+        "A house builds them."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select the pronoun: '_____ book is this?'",
+      "options": ["Whom", "Who", "Whose", "Which"],
+      "correct": 2
+    },
+    {
+      "question": "Identify the gerund phrase: 'Reading books improves knowledge.'",
+      "options": ["improves", "Reading books", "knowledge", "books"],
+      "correct": 1
+    },
+    {
+      "question": "Correct the sentence: 'He run fast.'",
+      "options": [
+        "He runs fast.",
+        "He running fast.",
+        "He runned fast.",
+        "No change."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose the modal for obligation: 'You _____ finish your homework.'",
+      "options": ["will", "can", "may", "must"],
+      "correct": 3
+    },
+    {
+      "question": "Convert to direct: 'She told me that she was happy.'",
+      "options": [
+        "She said, 'I am happy.'",
+        "She said, 'She is happy.'",
+        "She told, 'I was happy.'",
+        "She tells, 'I am happy.'"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select preposition: 'He succeeded _____ hard work.'",
+      "options": ["with", "by", "on", "at"],
+      "correct": 1
+    },
+    {
+      "question": "Identify tense: 'We will have finished by tomorrow.'",
+      "options": [
+        "Future Perfect",
+        "Future Continuous",
+        "Present Perfect",
+        "Past Perfect"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose conjunction: 'It was raining, _____ we stayed indoors.'",
+      "options": ["but", "so", "or", "and"],
+      "correct": 1
+    },
+    {
+      "question": "What is the adjective clause in: 'The man who is tall is my uncle.'",
+      "options": ["The man", "who is tall", "is my uncle", "tall"],
+      "correct": 1
+    },
+    {
+      "question": "Correct agreement: 'A pair of shoes ____ missing.'",
+      "options": ["is", "are", "were", "have"],
+      "correct": 0
+    },
+    {
+      "question": "Change to passive: 'Did you see the movie?'",
+      "options": [
+        "The movie was saw by you.",
+        "Did the movie see you?",
+        "You saw the movie?",
+        "Was the movie seen by you?"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Select pronoun: 'The dog wagged _____ tail.'",
+      "options": ["it", "it's", "its", "their"],
+      "correct": 2
+    },
+    {
+      "question": "Identify infinitive: 'She wants to dance.'",
+      "options": ["to dance", "wants", "She", "dance"],
+      "correct": 0
+    },
+    {
+      "question": "Correct sentence: 'Hardly had he arrived when it rained.'",
+      "options": [
+        "Correct",
+        "Hardly he arrived when it rained.",
+        "He hardly arrived when it rained.",
+        "When it rained, hardly had he arrived."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose modal: 'It _____ rain today.'",
+      "options": ["must", "might", "should", "can"],
+      "correct": 1
+    },
+    {
+      "question": "Convert to indirect: 'The teacher said, \"The Earth revolves around the Sun.\"'",
+      "options": [
+        "The teacher says the Earth revolves around the Sun.",
+        "The teacher said the Earth revolved around the Sun.",
+        "The teacher said that the Earth revolves around the Sun.",
+        "The teacher said that the Earth revolve around the Sun."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Select preposition: 'Divide the cake _____ four parts.'",
+      "options": ["into", "in", "on", "at"],
+      "correct": 0
+    },
+    {
+      "question": "Identify the sentence type: 'I like tea, but he likes coffee.'",
+      "options": ["Simple", "Compound", "Complex", "None"],
+      "correct": 1
+    },
+    {
+      "question": "Choose article: '_____ Ganges is a sacred river.'",
+      "options": ["A", "An", "The", "No article"],
+      "correct": 2
+    },
+    {
+      "question": "Change to active: 'The book has been read by many.'",
+      "options": [
+        "Many have read the book.",
+        "Many reads the book.",
+        "The book reads many.",
+        "Many had read the book."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select conjunction: '_____ you study hard, you will pass.'",
+      "options": ["So", "Although", "Because", "If"],
+      "correct": 3
+    },
+    {
+      "question": "What is the participle phrase in: 'Exhausted from the journey, he slept.'",
+      "options": [
+        "he slept",
+        "Exhausted from the journey",
+        "slept",
+        "from the journey"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Correct tense: 'She _____ since morning.'",
+      "options": ["has been working", "works", "worked", "will work"],
+      "correct": 0
+    },
+    {
+      "question": "Identify error: 'One of the boys are absent.'",
+      "options": ["One of", "the boys", "are", "absent"],
+      "correct": 2
+    },
+    {
+      "question": "Choose modal: 'We _____ to help others.'",
+      "options": ["ought", "can", "may", "will"],
+      "correct": 0
+    },
+    {
+      "question": "Convert to direct: 'He exclaimed that it was wonderful.'",
+      "options": [
+        "He exclaimed, 'It was wonderful.'",
+        "He said, 'It is wonderful.'",
+        "He said, 'How wonderful!'",
+        "He exclaims, 'How wonderful!'"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Select preposition: 'She is good _____ mathematics.'",
+      "options": ["at", "in", "on", "with"],
+      "correct": 0
+    },
+    {
+      "question": "Identify adverb clause: 'As soon as he arrives, we will leave.'",
+      "options": [
+        "he arrives",
+        "we will leave",
+        "As soon as he arrives",
+        "will leave"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Choose article: 'He is _____ European.'",
+      "options": ["an", "a", "the", "no article"],
+      "correct": 1
+    },
+    {
+      "question": "Change to passive: 'Open the door.'",
+      "options": [
+        "The door is opened.",
+        "Let the door be opened.",
+        "Open door.",
+        "The door opens."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Select pronoun: '_____ did you meet?'",
+      "options": ["Whom", "Who", "Whose", "Which"],
+      "correct": 0
+    },
+    {
+      "question": "Identify gerund: 'I enjoy painting.'",
+      "options": ["I", "enjoy", "painting", "None"],
+      "correct": 2
+    },
+    {
+      "question": "Correct sentence: 'Scarcely had the game begun than it rained.'",
+      "options": [
+        "Scarcely had the game begun when it rained.",
+        "The game scarcely begun than it rained.",
+        "When it rained, scarcely had the game begun.",
+        "No change."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose modal: 'You _____ not smoke here.'",
+      "options": ["must", "can", "may", "will"],
+      "correct": 0
+    },
+    {
+      "question": "Convert to indirect: 'She asked, \"Where are you going?\"'",
+      "options": [
+        "She asks where I am going.",
+        "She asked where you are going.",
+        "She asked where I was going.",
+        "She asked where was I going."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Select preposition: 'He apologized _____ his mistake.'",
+      "options": ["with", "on", "at", "for"],
+      "correct": 3
+    },
+    {
+      "question": "Identify tense: 'I had eaten before you came.'",
+      "options": [
+        "Past Perfect",
+        "Past Continuous",
+        "Present Perfect",
+        "Future Perfect"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose conjunction: 'He is neither rich _____ famous.'",
+      "options": ["but", "or", "and", "nor"],
+      "correct": 3
+    },
+    {
+      "question": "What is the noun in: 'Honesty is the best policy.'",
+      "options": ["Honesty", "is", "best", "policy"],
+      "correct": 0
+    },
+    {
+      "question": "Correct agreement: 'Mathematics _____ my favorite subject.'",
+      "options": ["is", "are", "were", "have"],
+      "correct": 0
+    },
+    {
+      "question": "Change to active: 'A mistake was made by him.'",
+      "options": [
+        "He made a mistake.",
+        "He makes a mistake.",
+        "He was making a mistake.",
+        "A mistake made him."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select adverb: 'He speaks fluently.'",
+      "options": ["speaks", "He", "fluently", "None"],
+      "correct": 2
+    },
+    {
+      "question": "Identify conditional: 'If I were rich, I would travel.'",
+      "options": [
+        "Zero Conditional",
+        "First Conditional",
+        "Second Conditional",
+        "Third Conditional"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Choose article: '_____ apple a day keeps the doctor away.'",
+      "options": ["A", "An", "The", "No article"],
+      "correct": 1
+    },
+    {
+      "question": "Convert to passive: 'Who taught you English?'",
+      "options": [
+        "By whom were you taught English?",
+        "Who was taught English by you?",
+        "English taught you by whom?",
+        "You taught English by who?"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select conjunction: 'She worked hard _____ she could win.'",
+      "options": ["although", "because", "so that", "but"],
+      "correct": 2
+    },
+    {
+      "question": "Identify phrase: 'In spite of the rain, we went out.'",
+      "options": [
+        "Prepositional phrase",
+        "Adjective phrase",
+        "Adverb phrase",
+        "Noun phrase"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Correct tense: 'The train _____ before we reached.'",
+      "options": ["had left", "left", "leaves", "will leave"],
+      "correct": 0
+    },
+    {
+      "question": "Choose modal: '_____ you please help me?'",
+      "options": ["Should", "Must", "Could", "Ought"],
+      "correct": 2
+    },
+    {
+      "question": "Convert to direct: 'He wondered what time it was.'",
+      "options": [
+        "He said, 'What time is it?'",
+        "He said, 'What time it is?'",
+        "He wondered, 'What time was it?'",
+        "He wonders, 'What time is it?'"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select preposition: 'She insisted _____ going.'",
+      "options": ["on", "at", "in", "with"],
+      "correct": 0
+    },
+    {
+      "question": "Identify voice: 'The door was opened.'",
+      "options": ["Active", "Passive", "Both", "None"],
+      "correct": 1
+    },
+    {
+      "question": "Choose article: 'He is _____ best student in class.'",
+      "options": ["a", "an", "the", "no article"],
+      "correct": 2
+    },
+    {
+      "question": "Change to passive: 'They will complete the project.'",
+      "options": [
+        "The project will be completed by them.",
+        "The project is completed by them.",
+        "They complete the project.",
+        "The project completes them."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Select pronoun: 'This is the house _____ I live.'",
+      "options": ["whom", "which", "who", "where"],
+      "correct": 3
+    },
+    {
+      "question": "Identify gerund: 'Smoking is harmful.'",
+      "options": ["Smoking", "is", "harmful", "None"],
+      "correct": 0
+    },
+    {
+      "question": "Correct sentence: 'No sooner did he arrive than the phone rang.'",
+      "options": [
+        "Correct",
+        "No sooner had he arrived than the phone rang.",
+        "The phone rang no sooner did he arrive.",
+        "Than the phone rang no sooner did he arrive."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Choose conjunction: 'Whether you like it _____ not, you must do it.'",
+      "options": ["or", "and", "but", "so"],
       "correct": 0
     }
   ]

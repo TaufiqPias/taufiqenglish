@@ -124,6 +124,7 @@ body {
 
 .dropdown-menu li {
   margin: 0;
+  list-style-type: none;
 }
 
 .dropdown-menu a {
