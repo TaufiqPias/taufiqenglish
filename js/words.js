@@ -1819,7 +1819,7 @@ const words = [
     word: "Amiable",
     pos: "Adjective",
     meaning: "Having a friendly and pleasant manner.",
-    bangla: "সৌজন্যময় और সদয়।",
+    bangla: "সৌজন্যময় বা সদয়।",
     example: "The new colleague proved amiable to everyone.",
   },
   {
