@@ -69,7 +69,10 @@
 
       <!-- Hero Section with Motto -->
       <section class="hero">
-        <h1>Master English; Master Opportunities.</h1>
+        <div class="wrapper">
+          <h1>Master <span class="auto-type"></span></h1>
+
+        </div>
         <p>
           Your comprehensive resource for mastering the English language and
           unlocking your potential.
@@ -302,6 +305,16 @@
       <br /><br />
       <b>Example Sentence</b> <br />${selected.example}
     `;
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["English", "Opportunities"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
     </script>
   </body>
 </html>

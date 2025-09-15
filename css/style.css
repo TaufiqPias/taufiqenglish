@@ -64,6 +64,12 @@ body {
   ); /* --smoky-black with 70% opacity for the dim effect */
 }
 
+/* moto styler */
+
+.wrapper span {
+  color: var(--lime-green);
+}
+
 /* 4. Modern Navigation Bar */
 .navbar {
   display: flex;
@@ -283,8 +289,7 @@ body {
 
 /* 10. Footer Styles */
 .footer {
-  min-width: auto;
-  margin-top: auto;
+  bottom: 0;
   background-color: var(--smoky-black);
   color: var(--tea-green);
   padding: 3rem 0 1rem 0;
