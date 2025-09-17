@@ -62,6 +62,7 @@
     <div class="container">
       <!-- Navigation -->
       <nav class="navbar">
+        
         <div class="nav-brand">
           <a href="/index.html"
             ><img
@@ -71,6 +72,17 @@
           /></a>
         </div>
         <ul class="nav-menu">
+          <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search lessons, grammar, exams..." id="searchInput">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <!-- Search Results Dropdown -->
+                <div class="search-results" id="searchResults">
+                    <!-- Results will be dynamically inserted here -->
+                </div>
+            </div>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/grammar_resources/grammarhome.html">Grammar</a></li>
           <li><a href="/online_exam/onlinehome.html">Online Exam</a></li>
@@ -355,7 +367,7 @@
             It consists of two or more independent clauses, which are joined together by a coordinating conjunction or a semicolon. <br>
             A compound sentence may follow the following pattern: <br>
             <p style="align-items: center; text-align: center; border: 1px solid chartreuse; padding: 20px;">
-            <span style="background-color: mediumseagreen; padding: 3px 10px; border-radius: 3px; color: black;">Independent clause</span> + <span style="background-color: rosybrown; padding: 3px 10px; border-radius: 3px; color: black;">Coordinating Conjunction</span> + <span style="background-color: mediumseagreen; padding: 3px 10px; border-radius: 3px; color: black;">Independent clause</span> 
+            <span style="background-color: mediumseagreen; padding: 3px 10px; border-radius: 3px; color: black;">Independent clause</span> + <span style="background-color: rosybrown; padding: 3px 10px; border-radius: 3px; color: black;">Coordinating Conjunction</span> + <span style="background-color: mediumseagreen; padding: 3px 10px; border-radius: 3px; color: black;">Independent clause</span></p> 
             For Example:
             <ul>
                 <li style="color: chartreuse">He is poor but (he is) happy.</li>
@@ -421,7 +433,7 @@
           <a href="/grammar_resources/grammarhome.html" class="prev-post"
             >← Previous Post: Grammar Home</a
           >
-          <a href="#" class="next-post">Next Post: Parts of Speech →</a>
+          <a href="../Parts-of-speech/pos.html" class="next-post">Next Post: Parts of Speech →</a>
         </div>
       </article>
     </div>
